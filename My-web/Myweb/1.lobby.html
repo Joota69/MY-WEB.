@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XR</title>
+    <link rel="stylesheet" href="11Loby.css">
+    <link rel="icon" type="image/x-icon" href="zpictures/J.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:wght@100;400;700&family=Noto+Sans+JP:wght@100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- Video de fondo -->
+    <video autoplay muted loop id="videoBackground">
+        <source src="zpictures/space1.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+
+    <!-- Encabezado y menú -->
+    <header>
+        <h1><strong>JR</strong> COMPANY</h1>
+        <section class="contenido">
+            <a href="12aboutme.html">Sobre mí</a>
+            <a href="13ProyectoA.html">Proyecto Ambiental</a>
+            <a href="14interes.html">Algo más</a>
+        </section>
+    </header>
+
+    <!-- Cuadro de datos personales y habilidades -->
+    <div class="codec-interface">
+        <div class="info-container">
+            <!-- Bloque de datos personales -->
+            <div class="personal-info cuadro">
+                <h2>Datos Personales</h2>
+                <p><strong>Nombre:</strong> Jhunior Herrera Valeriano</p>
+                <p><strong>Ocupación:</strong> Estudiante de Ingeniería Informática en la UPCH</p>
+                <p><strong>Edad:</strong> 20 años</p>
+                <p><strong>Intereses:</strong> En IA, ML, matemáticas y mecatrónica. Mi pasión es aprender y aplicar tecnología para mejorar el mundo.</p>
+            </div>
+        </div>
+    </body>
+    
+
+    <div class="codec-interface">
+        <!-- Bloque de habilidades -->
+        <div class="skills cuadro">
+            <h2>Habilidades</h2>
+            <div class="skill">
+                <p>Scrum Master</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 95%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>Diseño 3D</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 70%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>Programación</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 50%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Contenedor de imágenes con animación -->
+    <div class="image-container">
+        <img id="image1" src="zpictures/Jelegante.png" alt="Elegante">
+        <img id="image2" src="zpictures/bataJ.png" alt="Terno" style="display:none;">
+    </div>
+
+    <!-- Script para cambiar imágenes -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const image1 = document.getElementById('image1');
+            const image2 = document.getElementById('image2');
+
+            // Cambiar imágenes cada 3 segundos
+            setInterval(function () {
+                if (image1.style.display === 'none') {
+                    image1.style.display = 'block';
+                    image2.style.display = 'none';
+                } else {
+                    image1.style.display = 'none';
+                    image2.style.display = 'block';
+                }
+            }, 4000);
+        });
+    </script>
+
+    <!-- Pie de página -->
+    <footer>
+        <p><a href="https://www.linkedin.com/in/jhunior-herrera/" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/Joota69"target="_blank">GitHub</a> | 
+            <a href="https://www.youtube.com/@joot4"target="_blank">YouTube</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,149 @@
+/* Estilos Generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+    background-color: #1d4e33;
+    background-image: url('zpictures/fondoaboutme.jpg');
+    background-size: cover; /* Cubre toda la pantalla con la imagen */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-attachment: fixed; /* Mantiene el fondo fijo mientras el contenido se desplaza */
+    width: 100%;
+    height: 100%;
+    padding-top: 150px; /* Ajusta este valor según la altura de tu header */
+}
+
+/* Encabezado */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-bottom: 2px solid #00ffb3;
+    box-shadow: 0 0 10px #00ffb3, 0 0 40px rgba(0, 255, 179, 0.3);
+    padding: 0px;
+    z-index: 1;
+    height: 150px; /* Ajusta este valor según la altura deseada */
+}
+
+/* Estilo de Títulos */
+h1 {
+    font-size: 3.5em;
+    margin: 0;
+    text-align: center;
+    color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Contenido Principal */
+section.contenido {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo de Enlaces */
+section.contenido a {
+    font-size: 1.2em;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 150px;
+    transition: color 0.3s ease; /* Suave cambio de color */
+}
+
+section.contenido a:hover {
+    color: #007BFF;
+    text-decoration: underline;
+    transform: scale(1.01); /* Aumentar ligeramente el tamaño */
+    box-shadow: 0 8px 20px rgba(0, 255, 255, 0.8); /* Sombra más intensa */
+}
+
+/* Estilo de Imágenes */
+.imagen-centrada {
+    text-align: center; /* Centra la imagen horizontalmente */
+}
+
+.imagen-centrada img {
+    display: block; /* Hace que la imagen se comporte como un bloque */
+    margin: 0 auto; /* Centra la imagen automáticamente */
+    border-radius: 15px;
+
+}
+
+.imagenes-lado-a-lado {
+    display: flex; /* Hace que las imágenes se alineen en fila */
+    justify-content: center; /* Centra las imágenes dentro del contenedor */
+    gap: 20px; /* Espacio entre las imágenes */
+}
+
+.imagenes-lado-a-lado img {
+    max-height: 400px; /* Ajusta la altura máxima */
+    border-radius: 15px;
+}
+
+.imagen-ajustada {
+    width: 500px; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción original */
+}
+
+.imagen-ajustada2 {
+    width: 850px; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción original */
+}
+
+/* Párrafos */
+p {
+    font-size: 1.3em;
+    color: #00ffcc; /* Color brillante */
+    padding: 15px 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro para contraste */
+    margin-bottom: 30px;
+    border-radius: 10px; /* Bordes redondeados */
+    border: 2px solid #ff00ff; /* Bordes brillantes */
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.5); /* Sombra suave */
+    line-height: 1.8; /* Mejora la legibilidad */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra de texto */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+/* Efecto al pasar el mouse sobre los párrafos */
+p:hover {
+    transform: scale(1.01); /* Aumentar ligeramente el tamaño */
+    box-shadow: 0 8px 20px rgba(0, 255, 255, 0.8); /* Sombra más intensa */
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo más oscuro */
+}
+
+/* Estilo para el botón en la esquina superior izquierda */
+.btn-lobby {
+    position: absolute; /* Para que puedas colocarlo en una posición fija */
+    top: 3px; /* Ajusta la distancia desde la parte superior de la página */
+    left: 2px; /* Ajusta la distancia desde el lado izquierdo */
+    background-color: #00085e; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    padding: 10px 15px; /* Espaciado dentro del botón */
+    text-align: center; /* Alinear el texto */
+    text-decoration: none; /* Eliminar el subrayado del enlace */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño del texto */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    transition: background-color 0.3s ease; /* Transición suave al pasar el mouse */
+}
+
+.btn-lobby:hover {
+    background-color: #d0ff00; /* Cambio de color al pasar el mouse */
+}
+
+footer {
+    text-align: center;
+    padding: 5px 0;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    border-top: 4px solid #2c4648;
+    font-size: 0.9em;
+}

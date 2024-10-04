@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+    background-color: #1d4e33;
+    background-image: url('zpictures/n18.jpg');
+    background-size: cover; /* Cubre toda la pantalla con la imagen */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-attachment: fixed; /* Mantiene el fondo fijo mientras el contenido se desplaza */
+    width: 100%;
+    height: 100%;
+}
+
+
+
+header {
+    background-color: #1a3d10;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #0c8520;
+    font-family: 'Press Start 2P', cursive;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+nav.contenido {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav.contenido a {
+    font-size: 1em;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 100px;
+    padding: 10px 20px;
+    background-color: #265b05;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav.contenido a:hover {
+    background-color: #0c8520;
+    color: #fff;
+    text-decoration: none;
+}
+
+h2, h3 {
+    color: #1a3d10;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+p {
+    line-height: 1.8;
+    font-size: 1.2em;
+    color: #555;
+}
+
+iframe {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative; /* Permite posicionar elementos absolutos dentro de este contenedor */
+    top: -25px; 
+}
+
+.texto {
+    position: relative; /* Asegura que los elementos absolutos dentro de esta sección se posicionen en relación a ella */
+}
+
+.modelo-3d, .modelo-3d2 {
+    background-color: #aeaeae;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: absolute; 
+    width: 280px; 
+    height: 250px;
+}
+
+.modelo-3d {
+    top: 145px; 
+    left: 5px; 
+}
+
+.modelo-3d2 {
+    top: 145px; 
+    left: 1135px; 
+    max-width: 100%; 
+    max-height: 100%;
+    overflow: hidden; 
+}
+
+
+.imagen-ods img {
+    border-radius: 20px;
+    position: absolute; 
+    width: 280px; 
+    height: 250px;
+    top: 420px;
+    left: 5px;
+}
+
+.arcade img {
+    border-radius: 20px;
+    position: absolute;
+    width: 280px; 
+    height: 250px;
+    top: 420px;
+    left: 1135px;
+}
+
+.n16 img {
+    border-radius: 20px;
+    position: absolute; 
+    width: 280px; 
+    height: 250px;
+    top: 700px;
+    left: 1135px;
+}
+
+.n17 img {
+    border-radius: 20px;
+    position: absolute; 
+    width: 280px; 
+    height: 250px;
+    top: 700px;
+    left: 5px;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 5px 0;
+    background-color: #1a3d10;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    border-top: 4px solid #0c8520;
+    font-size: 0.9em;
+}
+
+.textf p{
+    color: #ffffff;
+}
+
+
+.btn-lobby {
+    position: absolute; /* Para que puedas colocarlo en una posición fija */
+    top: 10px; /* Ajusta la distancia desde la parte superior de la página */
+    left: 0px; /* Ajusta la distancia desde el lado izquierdo */
+    background-color: #1a3d10; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    padding: 5px 10px; /* Espaciado dentro del botón */
+    text-align: center; /* Alinear el texto */
+    text-decoration: none; /* Eliminar el subrayado del enlace */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño del texto */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    transition: background-color 0.3s ease; /* Transición suave al pasar el mouse */
+}
+
+.btn-lobby:hover {
+    background-color: #d0ff00; /* Cambio de color al pasar el mouse */
+}
