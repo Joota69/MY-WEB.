@@ -1,23 +1,46 @@
-
-  
-  @media (min-width: 769px) {
-    /* Estilos para pantallas más grandes */
-    .tu-clase {
-      width: 50%;
-      font-size: 1.5rem;
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .contenedor {
+      width: 100%;
+      padding: 10px;
     }
-  }
+    .item {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    /* Ajustes para los elementos con posicionamiento absoluto */
+    .modelo-3d, .modelo-3d2, .imagen-ods img, .arcade img, .n16 img, .n17 img {
+      position: static; /* Elimina el posicionamiento absoluto */
+      width: 100%; /* Ocupará el 100% del ancho disponible */
+      height: auto; /* Ajusta la altura de forma automática */
+      margin-bottom: 20px; /* Añade espacio entre los elementos */
+    }
 
-  .contenedor {
-    width: 80%; /* Se ajustará al 80% del tamaño de la pantalla */
-    padding: 2rem; /* Se ajustará según la pantalla */
-  }
+    main {
+      width: 100%;
+      padding: 10px;
+    }
+}
 
-  
-  .item {
-    flex: 1 1 300px; /* El tamaño cambiará según el espacio disponible */
-  }
-  
+/* Para pantallas medianas (tablets y laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contenedor {
+      width: 90%;
+    }
+    .item {
+      width: 45%;
+    }
+}
+
+/* Para pantallas grandes (monitores de escritorio) */
+@media (min-width: 1025px) {
+    .contenedor {
+      width: 80%;
+    }
+    .item {
+      width: 30%;
+    }
+}
   
   
 body {
