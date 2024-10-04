@@ -18,11 +18,7 @@
     width: 80%; /* Se ajustará al 80% del tamaño de la pantalla */
     padding: 2rem; /* Se ajustará según la pantalla */
   }
-  .contenedor {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+
   
   .item {
     flex: 1 1 300px; /* El tamaño cambiará según el espacio disponible */
